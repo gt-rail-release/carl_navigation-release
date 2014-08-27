@@ -1,0 +1,12 @@
+Source: ros-indigo-carl-navigation
+Section: misc
+Priority: extra
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/carl_navigation
+Standards-Version: 3.9.2
+
+Package: ros-indigo-carl-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-carl-description, ros-indigo-dwa-local-planner, ros-indigo-gmapping, ros-indigo-move-base, ros-indigo-navfn, ros-indigo-rail-maps
+Description: Autonomous Navigation Capabilities for CARL
