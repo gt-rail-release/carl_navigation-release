@@ -1,0 +1,13 @@
+<!--
+   Author: Russell Toris, Worcester Polytechnic Institute
+  Version: August 26, 2014
+-->
+
+<launch>
+  <arg name="scan_topic" value="scan"/>
+
+  <node pkg="gmapping" name="slam_gmapping" type="slam_gmapping" output="screen">
+    <rosparam file="$(find carl_navigation)/config/gmapping_params.yaml" command="load" />
+    <remap from="scan" to="$(arg scan_topic)" />
+  </node>
+</launch>

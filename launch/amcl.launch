@@ -1,0 +1,18 @@
+<!--
+   Author: Russell Toris, Worcester Polytechnic Institute
+  Version: August 26, 2014
+-->
+
+<launch>  
+  <!-- Topics and Services -->
+  <arg name="static_map_service" default="static_map" />
+  <arg name="map_topic" default="map" />
+  <arg name="scan_topic" default="scan" />
+
+  <node pkg="amcl" name="amcl" type="amcl">
+    <rosparam file="$(find carl_navigation)/config/amcl_params.yaml" command="load" />
+    <remap from="scan" to="$(arg scan_topic)" />   
+    <remap from="map" to="$(arg map_topic)" />
+    <remap from="static_map" to="$(arg static_map_service)" />
+  </node>
+</launch>
