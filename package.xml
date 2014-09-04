@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>carl_navigation</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>Autonomous Navigation Capabilities for CARL</description>
   
   <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
@@ -21,4 +21,5 @@
   <run_depend>dwa_local_planner</run_depend>
   <run_depend>carl_description</run_depend>
   <run_depend>rail_maps</run_depend>
+  <run_depend>robot_pose_publisher</run_depend>
 </package>
