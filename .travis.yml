@@ -21,13 +21,13 @@ install:
   - mkdir -p /tmp/ws/src
   - ln -s `pwd` /tmp/ws/src/package
   - cd /tmp/ws/src
-  - git clone https://github.com/WPI-RAIL/python_ethernet_rmp.git
-  - git clone https://github.com/WPI-RAIL/battery_monitor_rmp.git
-  - git clone https://github.com/WPI-RAIL/ros_ethernet_rmp.git
-  - git clone https://github.com/WPI-RAIL/rmp_msgs.git
-  - git clone https://github.com/WPI-RAIL/m4atx_battery_monitor.git
-  - git clone https://github.com/RIVeR-Lab/wpi_jaco.git
   - git clone https://github.com/WPI-RAIL/carl_bot.git
+  - git clone https://github.com/RIVeR-Lab/wpi_jaco.git
+  - mkdir carl_description
+  - mkdir jaco_description
+  - mv carl_bot/carl_description/* carl_description/
+  - mv wpi_jaco/jaco_description/* jaco_description/
+  - rm -rf carl_bot wpi_jaco
   - cd ../
   - rosdep install --from-paths src --ignore-src --rosdistro hydro -y
   - sudo apt-get purge yaml-cpp
