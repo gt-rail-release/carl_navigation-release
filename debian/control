@@ -1,0 +1,12 @@
+Source: ros-indigo-carl-navigation
+Section: misc
+Priority: extra
+Maintainer: Russell Toris <rctoris@wpi.edu>
+Build-Depends: debhelper (>= 9.0.0), libyaml-cpp-dev, pkg-config, ros-indigo-actionlib, ros-indigo-actionlib-msgs, ros-indigo-catkin, ros-indigo-costmap-2d, ros-indigo-dynamic-reconfigure, ros-indigo-geometry-msgs, ros-indigo-message-generation, ros-indigo-move-base-msgs, ros-indigo-nav-msgs, ros-indigo-rail-ceiling, ros-indigo-roscpp, ros-indigo-roslib, ros-indigo-tf
+Homepage: http://ros.org/wiki/carl_navigation
+Standards-Version: 3.9.2
+
+Package: ros-indigo-carl-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libyaml-cpp-dev, ros-indigo-actionlib, ros-indigo-actionlib-msgs, ros-indigo-carl-description, ros-indigo-costmap-2d, ros-indigo-dwa-local-planner, ros-indigo-dynamic-reconfigure, ros-indigo-geometry-msgs, ros-indigo-gmapping, ros-indigo-message-runtime, ros-indigo-move-base, ros-indigo-move-base-msgs, ros-indigo-nav-msgs, ros-indigo-navfn, ros-indigo-rail-ceiling, ros-indigo-rail-maps, ros-indigo-robot-pose-publisher, ros-indigo-roscpp, ros-indigo-roslib, ros-indigo-tf
+Description: Autonomous Navigation Capabilities for CARL
