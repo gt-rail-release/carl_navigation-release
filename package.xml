@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>carl_navigation</name>
-  <version>0.0.8</version>
+  <version>0.0.9</version>
   <description>Autonomous Navigation Capabilities for CARL</description>
   
   <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
@@ -51,6 +51,7 @@
   <run_depend>roslib</run_depend>
   <run_depend>tf</run_depend>
   <run_depend>yaml-cpp</run_depend>
+  <run_depend>rail_collada_models</run_depend>
 
   <export>
     <costmap_2d plugin="${prefix}/config/costmap_plugins.xml" />
