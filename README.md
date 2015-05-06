@@ -1,3 +1,24 @@
+## carl_navigation (indigo) - 0.0.11-0
+
+The packages in the `carl_navigation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo carl_navigation` on `Wed, 06 May 2015 15:35:20 -0000`
+
+The `carl_navigation` package was released.
+
+Version of package(s) in repository `carl_navigation`:
+- upstream repository: https://github.com/WPI-RAIL/carl_navigation.git
+- release repository: https://github.com/wpi-rail-release/carl_navigation-release.git
+- rosdistro version: `0.0.10-0`
+- old version: `0.0.10-0`
+- new version: `0.0.11-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.8`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.36`
+
+
 ## carl_navigation (indigo) - 0.0.10-0
 
 The packages in the `carl_navigation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo carl_navigation` on `Fri, 27 Mar 2015 12:13:31 -0000`
