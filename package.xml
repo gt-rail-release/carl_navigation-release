@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>carl_navigation</name>
-  <version>0.0.10</version>
+  <version>0.0.11</version>
   <description>Autonomous Navigation Capabilities for CARL</description>
   
   <maintainer email="rctoris@wpi.edu">Russell Toris</maintainer>
@@ -45,7 +45,7 @@
   <run_depend>nav_msgs</run_depend>
   <run_depend>navfn</run_depend>
   <run_depend>rail_maps</run_depend>
-  <run_depend>rail_ceiling</run_depend>
+  <run_depend>actionlib</run_depend>
   <run_depend>robot_pose_publisher</run_depend>
   <run_depend>roscpp</run_depend>
   <run_depend>roslib</run_depend>
